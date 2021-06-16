@@ -46,7 +46,7 @@ body {
 }
 
 
-@media (max-width:500px){
+@media (max-width:767px){
   body {
   background: url(./components/face-mobile.png);
   background-repeat: no-repeat;
