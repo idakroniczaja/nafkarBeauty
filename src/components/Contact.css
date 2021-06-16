@@ -1,0 +1,133 @@
+.contact{
+  background-color:rgba(212, 231, 232, 0.692);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10em;
+  padding-bottom: 3em;
+  
+  }
+
+  .contact .working-hours, .contact-info, .direction{
+       width: 80%;
+       display: flex;
+       margin-bottom: 2em;
+       color: #6b7779;
+       
+  }
+
+.contact .working-hours{
+  border: 1px solid white;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+}
+
+.contact .working-hours .working-hours-info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+}
+
+
+
+.contact .working-hours .working-hours-info h3{
+  margin: 0;
+  padding: 1em 0 0;
+  color:#646f70
+}
+
+
+
+.contact .contact-info{
+
+  justify-content: space-between;
+  font-size: 1.7rem;
+}
+
+.contact .contact-info p{
+
+  padding-top: 2em;
+  padding-bottom: 1em;
+  text-align: center;
+
+}
+
+.contact .contact-info p:first-child::after,
+.contact .contact-info #book-now::after
+{
+  content: 'phone number';
+  display: block;
+  font-size: 0.85rem;
+  border-top: 1px solid white;
+  padding: 1em;
+  margin: 1em;
+
+}
+
+.contact .contact-info a{
+  text-decoration: none;
+  color: #6b7779;
+}
+
+
+.contact .contact-info #book-now::after{
+  content: 'book now';
+}
+
+
+.contact .direction{
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.contact .direction h2{
+  font-size: 2rem;
+  width: 40%;
+  text-align: center;
+
+}
+.contact .address{
+  border: 1px solid white;
+  text-align: center;
+  width: 40%;
+  min-width: 250px;
+ 
+}
+
+.contact .address a{
+  text-decoration: none;
+  color: #6b7779;
+}
+
+.contact .address>p:first-child{
+  padding: 2em;
+  border-bottom: 1px solid white;
+  font-size: 1.1rem;
+
+
+}
+
+.contact .address :last-child{
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform:uppercase;
+}
+
+@media (max-width:500px){
+  .contact .direction h2{
+    font-size: 1.5rem;
+    margin-right: 1em;
+  }
+  .contact .contact-info{
+    font-size: 1.2rem;
+  }
+}

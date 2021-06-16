@@ -1,0 +1,122 @@
+nav{
+    /* background-color:rgba(100, 0, 0, 0.5) */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    
+}
+
+nav ul li{
+    padding: 1em 0;
+
+}
+
+
+nav ul li:hover{
+    list-style:'− ' inside;
+  
+}
+
+nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #9FADAE;
+    letter-spacing: 0.2rem;
+    transition-property: color, letter-spacing;
+    transition-duration: 1000ms;   
+
+}
+
+nav a:hover{
+    color:skyblue;
+    list-style:'− ' inside;
+}
+
+nav a:focus{
+    color: skyblue;
+    letter-spacing: 0.8rem;
+   
+}
+
+nav a:active{
+    color: skyblue;
+}
+
+
+
+
+.burger-menu{
+    display: none;  
+
+}
+
+@media (max-width:1000px){
+
+    
+    .burger-menu{
+        display: block;
+        color: rgb(87, 184, 223);
+        font-size: 1.5rem;
+        position: relative;
+        padding: 0.5em;
+    }
+
+    nav ul {
+        position:absolute;
+        background: #BACACB;
+        width: 150px;
+        height: 45vh;
+        min-height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-end;
+        top:-17px;
+        right: 20px;
+        z-index: -1;
+        animation-name: navbar;
+        animation-duration: 500ms;
+        animation-timing-function: ease-in;
+       
+    }
+
+    @keyframes navbar {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+  
+
+    nav a{
+        color: white;
+        font-size: 0.8rem;
+        padding: 1em; 
+        transition-property: color, letter-spacing;
+        transition-duration: 1000ms;       
+
+    }
+
+
+    nav a:hover{
+        color: #9FADAE;
+
+    }
+
+    nav a:focus{
+        color: rgb(87, 184, 223);
+        letter-spacing: 0.8rem;
+       
+    }
+
+
+    nav a:active{
+        color: rgb(87, 184, 223);
+
+    }
+
+
+
+}
+
+
+

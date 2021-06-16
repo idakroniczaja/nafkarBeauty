@@ -1,0 +1,27 @@
+.home{
+    /* background-color: lawngreen; */
+    background-color:rgba(67, 199, 232, 0.5);
+    /* padding: 4em 0; */
+
+}
+
+.home h1 {
+    text-shadow: 5px 5px 8px white;
+    color: #6b7779;
+    font-size: 5rem;
+    text-align: center;
+    font-weight: 400;
+    position: relative;
+    top: 1.5em;
+    margin-bottom: 2em;
+  }
+  
+  .home h1 span{
+    font-family: cursive
+  }
+
+  @media (max-width:500px){
+    .home h1 {
+      font-size: 4rem;
+    }
+  }

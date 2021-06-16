@@ -1,0 +1,94 @@
+.services{
+    background-color:rgba(100, 111, 112, 0.5);
+    padding-bottom: 2em;
+}
+
+.services h2{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px #6b7779;
+}
+
+
+.services .button-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.services .button-list button{
+    background-color: #8f9d9e;
+    border: none;
+    height: 55px;
+    margin: 0.75em 1em;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    text-align: left;
+    padding: 0 1em;
+    cursor: pointer;
+}
+
+
+.services .button-list button:hover{
+        transform:scale(1.04);
+        box-shadow: 10px 10px 7px 1px rgba(0, 0, 0, .2);
+}
+
+.service-box{  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 1em 1em;
+    animation: service 1s linear forwards;
+}
+
+@keyframes service {
+    0%{transform:translateY(-7%);opacity:0;}
+    100%{transform:translateY(0%);opacity:1;}
+    
+}
+
+.service-box-info{
+    background-color: white; 
+    width: 40%;
+    min-width: 300px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #8f9d9e;;;
+    border-radius: 5px;
+    color: #6b7779;
+    padding: 0 1em;
+    overflow: hidden;
+   
+}
+
+.service-box-info span{
+   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50%;
+    min-width: 50%;
+}
+
+.service-box-info span h4{
+    margin-right: 1em;
+    text-align: start;
+}
+
+.service-box-info span p{
+    min-width: 30%;
+    text-align:end;
+}
+.service-box-info > p{
+    margin: 0 0 1em;
+    text-align: center;
+
+}

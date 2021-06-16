@@ -1,0 +1,194 @@
+.content{
+  /* background-color:rgba(67, 199, 232, 0.5); */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  top: 50vh;
+  margin: 0;
+  height:unset
+}
+
+.scroll{
+  top:0
+}
+
+
+
+@media (max-width:1000px){
+  .content{
+    z-index: 0;
+    width: 100%;
+
+  }
+  
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .content{
+  z-index: 2;
+  width: 49vw;
+  height: 70vh;
+  float:right;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding:0 2em;
+  margin-top: 0;
+}
+
+.content h1 {
+  text-shadow: 2px 2px 8px darkgray;
+  color: darkgray;
+  font-size: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight:lighter;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.content h1 span{
+color: skyblue;
+ font-family: cursive
+}
+
+.content p {
+  color: darkgray;
+  font-size: 1.5em;
+  text-align: justify;
+}
+
+.content p span {
+  color: rgb(124, 124, 124);
+ 
+}
+
+.content .images {
+  display: flex;
+  justify-content: center;
+  box-shadow: 1vw 1vh 1vw #888888;
+}
+
+@media(max-width:1024px){
+
+  .content h1{
+   font-size: 3em;
+   padding-top: 1em;
+  }
+  .content p{
+    font-size: 1em;
+  }
+ 
+  
+}
+
+@media(max-width:850px){
+  .content .images{
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-auto-rows: 50%;
+    box-shadow: 1vw 6vh 2vw #888888;
+  }
+
+  .content .images img{
+    width: 100%;
+  }
+}
+
+@media(max-width:580px){
+  .content .images{
+    display: flex;
+    width: 52%;
+    margin-left: -40vw;
+    margin-bottom: -8vh;
+    box-shadow: 0vw 1vh 1vw #888888;
+
+  }
+  
+}
+
+
+@media (max-width:510px){
+  .content h1{
+    font-size: 2.6em;
+    padding-top: 1em;
+    padding-left: 0.5em;
+   }
+   .content p{
+     font-size: 1em;
+   
+ 
+}
+}
+
+@media (max-width:510px){
+  .content h1{
+    font-size: 2.2em;
+  }
+  .content .images{
+    margin-bottom: -5vh;
+
+  }
+}
+
+@media (max-width:375px){
+  .content{
+    padding:1.25em;
+  }
+  .content h1{
+    font-size: 2em;
+  }
+  .content p{
+    font-size: 0.8em;
+  }
+  .content .images{
+    margin-bottom: 0vh;
+  }
+}
+
+@media (max-width:320px){
+ .content h1{
+  font-size: 1.5em;
+ }
+ .content p{
+   font-size: 0.5em;
+ }
+ .content .images{
+   margin-bottom: -2vh;
+
+ }
+} */

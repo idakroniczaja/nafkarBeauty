@@ -1,0 +1,56 @@
+body {
+  font-family: 'Gill Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url(./components/face.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+
+}
+
+.App{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100%; 
+ 
+
+}
+
+.container{
+  z-index: 1;
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-wrapper {
+  width: 95%;
+  margin: 0;
+  padding: 0 2em;
+}
+
+
+@media (max-width:1000px){
+
+  .App{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+  .container{
+    width: 100vw;
+    height:fit-content;
+  }
+  .content-wrapper {
+   width: 100%;
+   padding: 0 0em;
+  }
+
+}
+

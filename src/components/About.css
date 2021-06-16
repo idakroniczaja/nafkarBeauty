@@ -1,0 +1,82 @@
+.about{
+    background-color:rgba(67, 199, 232, 0.5);
+}
+
+.about p{
+    font-size: 1.25rem;
+    font-weight: 200;
+    line-height: 2em;
+    text-align: justify;
+    padding: 2em;
+    color: white ;
+    /* color:#646f70*/
+} 
+
+.about span{
+    font-weight: 400;
+}
+
+.about .owner{
+    /* background-color: tomato; */
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3em;
+}
+
+.about .owner p{
+    padding:2em 0;
+    margin: 0;
+    width: 45%;
+    border-top: 1px solid white;
+}
+
+.about .owner #owner-intro::after{
+    display: block;
+    content: 'Nafsika K';
+    font-family: 'Snell Roundhand', cursive;
+    text-align: end;
+    font-size: 2rem;
+
+}
+
+
+.about .owner .owner-photo{
+    width: 45%;
+    border: 1px solid white ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    margin-bottom:3em;
+}
+
+.about .owner .owner-photo #name-photo{
+   /* background-color: tomato; */
+    border-top: 1px solid white ;
+    width: 100%;
+    height: 3%;
+    text-align:center;
+    font-size: 1.5rem;
+    font-weight:400;
+}
+
+.about .owner .owner-photo #name-photo::after{
+    content: 'founder';
+    display: block;
+    font-size: 1rem;
+    margin-top: -1.5em;
+}
+
+
+.about .owner .owner-photo img{
+    display: block;
+    border-radius: 50%;
+}
+
+
+@media (max-width:1000px){
+.about{
+padding: 5%;
+width: 90%;
+}
+}

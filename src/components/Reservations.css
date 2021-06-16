@@ -1,0 +1,41 @@
+.reservations{
+    /* background-color:rgba(0, 0, 200, 0.5); */
+    border: 1px solid #9FADAE;
+    width: 300px;
+    height: 45px;
+}
+
+.reservations p{
+    border: 1px solid #9FADAE;
+    margin: 0.3em;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    padding-top: 1em;
+   
+
+}
+
+.icon{
+    color:rgb(87, 184, 223);
+    display: none;
+
+  
+}
+
+@media (max-width:1000px){
+    .icon{
+        display: block;
+        font-size: 1.5rem;
+        margin-right: 2em;
+
+   
+    }
+
+    .reservations{
+        display: none;
+    }
+
+
+
+}
