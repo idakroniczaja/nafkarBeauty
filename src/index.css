@@ -44,3 +44,14 @@ body {
   }
   
 }
+
+
+@media (max-width:767px){
+  body {
+  background: url(./components/face-mobile.png);
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+}
