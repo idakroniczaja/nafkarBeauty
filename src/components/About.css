@@ -9,7 +9,6 @@
     text-align: justify;
     padding: 2em;
     color: white ;
-    /* color:#646f70*/
 } 
 
 .about span{
@@ -89,4 +88,13 @@ background-color:rgba(67, 199, 232, 75%);
         justify-content: space-around;
         align-items: center;
     }
+    .about .owner #owner-intro{
+        width: 80%;
+
+    }
+
+.about .owner .owner-photo{
+    flex-direction: row;
+}
+
 }
