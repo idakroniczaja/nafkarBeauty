@@ -17,12 +17,14 @@
     justify-content: space-between;
     align-items: center;
     width: 80%;
+    margin-left: 1em;
 }
 
 .services .button-list button{
     background-color: #8f9d9e;
     border: none;
     height: 55px;
+    width: 100%;
     margin: 0.75em 1em;
     border-radius: 5px;
     font-size: 1.2rem;
