@@ -51,7 +51,7 @@ body {
       position: relative;
     }
 
-    body:after {
+    body::before {
       position: fixed;
       top: 0;
       left: 0;
