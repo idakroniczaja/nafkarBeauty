@@ -18,7 +18,7 @@
 @media (max-width:1000px){
   .content{
     z-index: 0;
-    width: 100%;
+    width: 100vw;
 
   }
   
@@ -26,9 +26,9 @@
 }
 
 @media (max-width:767px){
-  /* .content{
-      display: none;
-  } */
+  .content{
+      height: auto;
+  }
 
 }
 
