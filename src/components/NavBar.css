@@ -75,11 +75,12 @@ nav a:active{
         flex-direction: column;
         justify-content:flex-end;
         top:-17px;
-        right: 20px;
+        right: 10px;
         z-index: -1;
         animation-name: navbar;
         animation-duration: 500ms;
         animation-timing-function: ease-in;
+    
        
     }
 
@@ -122,3 +123,11 @@ nav a:active{
 
 
 
+@media (max-width:767px){
+    nav a:hover{
+        color: rgb(87, 184, 223);
+        letter-spacing: 0.8rem;
+
+    }
+
+    }
