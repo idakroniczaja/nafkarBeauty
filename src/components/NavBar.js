@@ -32,7 +32,7 @@ const handleToggle = ()=> {
 }
 
 useEffect(() => {
-    setToggle(true)
+    setToggle(false)
     window.addEventListener('resize', handleResize)
 
     return ()=>{
