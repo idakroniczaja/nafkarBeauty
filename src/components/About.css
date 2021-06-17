@@ -17,7 +17,6 @@
 }
 
 .about .owner{
-    /* background-color: tomato; */
     display: flex;
     justify-content: space-between;
     padding-top: 3em;
@@ -82,4 +81,12 @@ background-color:rgba(67, 199, 232, 75%);
 }
 
 
+}
+
+@media (max-width:700px){
+    .about .owner{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
 }
