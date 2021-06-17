@@ -97,5 +97,9 @@ background-color:rgba(67, 199, 232, 75%);
     flex-direction: row;
     width: 80%;
 }
+.about .owner .owner-photo #name-photo{
+     border-left: 1px solid white ;
+
+ }
 
 }
