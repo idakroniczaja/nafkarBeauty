@@ -9,11 +9,6 @@
   height:unset
 }
 
-/* .scroll{
-  top:0
-} */
-
-
 
 @media (max-width:1000px){
   .content{
@@ -27,7 +22,7 @@
 
 @media (max-width:767px){
   .content{
-      height: auto;
+      height:min-content;
   }
 
 }
