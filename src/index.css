@@ -51,6 +51,11 @@ body {
     body {
     background: url(./components/face-mobile.png);
     background-attachment: scroll;
+    -webkit-background-size: cover !important; 
+    -moz-background-size: cover !important; 
+    -o-background-size: cover;
+    background-size: cover !important; 
+    z-index: -1;
     }
   }
   /* body {
