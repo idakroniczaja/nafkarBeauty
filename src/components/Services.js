@@ -14,7 +14,7 @@ const services = useRef(null);
 const button1 = useRef(null)
 console.log(button1.current)
 
-const closeBtn1 = () => (button1.current);
+
 
 
 const showDiv = async (e) => {

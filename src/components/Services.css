@@ -1,6 +1,9 @@
 .services{
     background-color:rgba(100, 111, 112, 0.5);
     padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .services h2{
@@ -94,6 +97,6 @@
 }
 
 @media (max-width:750px){
-    
+
 
 }

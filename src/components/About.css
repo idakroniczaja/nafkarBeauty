@@ -99,6 +99,7 @@ background-color:rgba(67, 199, 232, 75%);
 }
 .about .owner .owner-photo #name-photo{
      border-left: 1px solid white ;
+     border-top: none;
 
  }
 
