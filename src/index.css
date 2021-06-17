@@ -47,9 +47,9 @@ body {
 
 
 @media (max-width:767px){
-    body {
+    /* body {
       position: relative;
-    }
+    } */
 
     body::before {
       position: fixed;
@@ -61,18 +61,8 @@ body {
       background-image: url(./components/face-mobile.png);
       background-size: cover;
       background-repeat: no-repeat;
-      background-color: #000;
+      background-color: #646f70;
       background-position:center;
     }
-    
-  
-  /* body {
-  background-repeat: no-repeat;
-  background-size:auto;
-  background-position: center;
-  background-attachment: fixed;
-  background-position-x: 0%;
-  background-position-y: 0%;
 
-} */
 }
