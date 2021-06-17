@@ -16,7 +16,7 @@
      flex-direction: row;
     align-items: center;
     justify-content:space-between;
-    margin-top: 90px;
+  
     padding-left: 1.5em;
     z-index: 5;
 
@@ -35,7 +35,8 @@
 
 @media (max-width:400px){
     .header{
-        background-color: rgba(212,231,232,75%);
+        background-color: rgba(212,231,232,75%);  
+        margin-top: 50px;
         /* width: 100%; */
 
     }
