@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100vw;
-  /* height: 100%;  */
+
 }
 
 .container{
@@ -40,6 +40,7 @@ body {
 
   }
   .container{
+    width: 100%;
     height:unset;
   }
   
