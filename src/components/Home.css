@@ -31,12 +31,16 @@
   @media (max-width:550px){
     .home h1 {
       font-size: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
     }
   }
 
   @media (max-height:750px){
    
     .home h1 {
-      top: 1em;
+      top: 0.7em;
     }
   }

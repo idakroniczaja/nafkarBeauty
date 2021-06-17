@@ -46,6 +46,9 @@ body {
 
 
 @media (max-width:550px){
+  body{
+    background-image: url(./components/face-mobile.png);
+  }
 
 
     body::before {
