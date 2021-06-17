@@ -95,6 +95,7 @@ background-color:rgba(67, 199, 232, 75%);
 
 .about .owner .owner-photo{
     flex-direction: row;
+    width: 80%;
 }
 
 }
