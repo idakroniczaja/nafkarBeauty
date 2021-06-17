@@ -20,8 +20,23 @@
     font-family: cursive
   }
 
-  @media (max-width:500px){
+
+  @media (max-width:1000px){
+.home{
+  background-color:rgba(67, 199, 232, 70%);
+}
+
+  }
+
+  @media (max-width:550px){
     .home h1 {
       font-size: 4rem;
+    }
+  }
+
+  @media (max-height:750px){
+   
+    .home h1 {
+      top: 1em;
     }
   }

@@ -39,17 +39,14 @@ body {
 
   }
   .container{
-    /* width: 100vw; */
     height:unset;
   }
   
 }
 
 
-@media (max-width:767px){
-    /* body {
-      position: relative;
-    } */
+@media (max-width:550px){
+
 
     body::before {
       position: fixed;

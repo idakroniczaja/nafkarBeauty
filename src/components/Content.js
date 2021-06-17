@@ -10,7 +10,7 @@ import Contact from './Contact'
 
 
 
-export default function Content({active, setActive, changeToHome, changeToAbout, changeToServices, changeToContact, changeToGallery}) {
+export default function Content({active, changeToHome, changeToAbout, changeToServices, changeToContact, changeToGallery}) {
 
 
 
