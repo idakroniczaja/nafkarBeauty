@@ -47,12 +47,19 @@ body {
 
 
 @media (max-width:767px){
-  body {
-  background: url(./components/face-mobile.png);
+  @supports (-webkit-touch-callout: inherit) {
+    body {
+    background: url(./components/face-mobile.png);
+    background-attachment: scroll;
+    }
+  }
+  /* body {
   background-repeat: no-repeat;
   background-size:auto;
   background-position: center;
   background-attachment: fixed;
+  background-position-x: 0%;
+  background-position-y: 0%;
 
-}
+} */
 }
