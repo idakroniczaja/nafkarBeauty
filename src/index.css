@@ -50,7 +50,7 @@ body {
   body {
   background: url(./components/face-mobile.png);
   background-repeat: no-repeat;
-  background-size:auto;
+  background-size:cover;
   background-position: center;
   background-attachment: initial;
 
