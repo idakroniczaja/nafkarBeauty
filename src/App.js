@@ -22,15 +22,15 @@ function App() {
 
 
 
-const goToHome = () => window.scrollTo({top: changeToHome.current.offsetTop, behavior:'smooth'});
-console.log(changeToContact)
-const goToAbout = () => window.scrollTo({top: changeToAbout.current.offsetTop+270, behavior:'smooth'});
-const goToServices = () => window.scrollTo({top: changeToServices.current.offsetTop+200, behavior:'smooth'})
-const goToContact = () => window.scrollTo({top: changeToContact.current.offsetTop+400, behavior:'smooth'});
+const goToHome = () => window.scrollTo({top: changeToHome.current.offsetTop-70, behavior:'smooth'});
+console.log(window)
+const goToAbout = () => window.scrollTo({top: changeToAbout.current.offsetTop-70, behavior:'smooth'});
+const goToServices = () => window.scrollTo({top: changeToServices.current.offsetTop-70, behavior:'smooth'})
+const goToContact = () => window.scrollTo({top: changeToContact.current.offsetTop, behavior:'smooth'});
 const goToGallery = async() => {
     if (!active){
       await setActive(!active);
-        window.scrollTo({top: changeToGallery.current.offsetTop+200, behavior:'smooth'});
+        window.scrollTo({top: changeToGallery.current.offsetTop, behavior:'smooth'});
     } else{
       await setActive(!active);
     }

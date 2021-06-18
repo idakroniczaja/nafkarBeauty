@@ -20,26 +20,24 @@ export default function NavBar({active, setActive, goToHome, goToAbout, goToServ
 
 
 const handleResize = () => {
-    setWindowWidth(window.innerWidth);
+    //setWindowWidth(window.innerWidth);
     handleToggle()
 }
 
 const handleToggle = ()=> {
-    if(window.innerWidth>1000){
-          setToggle(true)
-             }
-        else setToggle(false)
+     if(window.innerWidth<1000){
+                  setToggle(false)
+                     }
+    if(window.innerWidth>=1000){
+        setToggle(true)
+    }
 }
 
 useEffect(() => {
-    setToggle(false)
+  handleResize()
     window.addEventListener('resize', handleResize)
 
-    return ()=>{
-        window.removeEventListener('resize', handleResize)
-        
-    }
-},[])
+},[window.innerWidth])
 
 
     return (
