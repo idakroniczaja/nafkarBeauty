@@ -121,6 +121,12 @@
   align-items: center;
   text-transform:uppercase;
 }
+@media (max-width:1000px){
+.contact{
+  align-self:flex-start;
+}
+}
+
 
 @media (max-width:500px){
   .contact .direction h2{

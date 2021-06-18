@@ -26,7 +26,7 @@ const goToHome = () => window.scrollTo({top: changeToHome.current.offsetTop, beh
 console.log(changeToContact)
 const goToAbout = () => window.scrollTo({top: changeToAbout.current.offsetTop+270, behavior:'smooth'});
 const goToServices = () => window.scrollTo({top: changeToServices.current.offsetTop+200, behavior:'smooth'})
-const goToContact = () => window.scrollTo({top: changeToContact.current.offsetTop+300, behavior:'smooth'});
+const goToContact = () => window.scrollTo({top: changeToContact.current.offsetTop+400, behavior:'smooth'});
 const goToGallery = async() => {
     if (!active){
       await setActive(!active);
