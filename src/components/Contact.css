@@ -123,7 +123,7 @@
 }
 @media (max-width:1000px){
 .contact{
-margin-right: -1em;
+align-items:inherit;
 }
 }
 
