@@ -11,12 +11,12 @@ const [clicked, setClicked] = useState(false);
 
 const services = useRef(null);
 
-
+console.log(changeToServices)
 
     const showDiv = async (e) => {
         e.preventDefault();
-setShowing(e.target.innerText);
-setClicked(!clicked)
+        setShowing(e.target.innerText);
+        setClicked(!clicked)
 }
 
 
@@ -43,7 +43,7 @@ setClicked(!clicked)
                      Nail Care
                 </button>
 
-                 {(showing === "Nail Care" && clicked) &&
+                 {(showing === "Nail Care" ) &&
             <ServiceBackend services={services}/>
             }
                 
@@ -53,7 +53,7 @@ setClicked(!clicked)
                 </div>
                 Paraffin
                 </button>
-                {(showing === "Paraffin" && clicked) &&
+                {(showing === "Paraffin" ) &&
                 <>
             <ServiceBackend services={services}/>
                 </>
@@ -68,7 +68,7 @@ setClicked(!clicked)
                 
                 Massage
                 </button>
-                {(showing === "Massage"&& clicked) &&
+                {(showing === "Massage") &&
                 <>
             <ServiceBackend services={services}/>
                 </>
@@ -81,7 +81,7 @@ setClicked(!clicked)
                 
                 Makeup
                 </button>
-                {(showing === "Makeup" && clicked) &&
+                {(showing === "Makeup" ) &&
                 <>
             <ServiceBackend services={services}/>
                 </>
@@ -94,7 +94,7 @@ setClicked(!clicked)
                 
                 Skincare
                 </button>
-                {(showing === "Skincare" && clicked) &&
+                {(showing === "Skincare" ) &&
                 <>
             <ServiceBackend services={services}/>
                 </>
@@ -108,7 +108,7 @@ setClicked(!clicked)
                 Eyelashes and Brows
                 </button>
                 
-                {(showing === "Eyelashes and Brows" && clicked) &&
+                {(showing === "Eyelashes and Brows") &&
                 <>
             <ServiceBackend services={services}/>
                 </>
@@ -123,7 +123,7 @@ setClicked(!clicked)
                 
                 Permanent Makeup
                 </button>
-                {(showing === "Permanent Makeup" && clicked) &&
+                {(showing === "Permanent Makeup") &&
                 <>
             <ServiceBackend services={services}/>
                 </>
@@ -136,7 +136,7 @@ setClicked(!clicked)
                 
                 Waxing
                 </button>
-                {(showing === "Waxing" && clicked) &&
+                {(showing === "Waxing") &&
                 <>
             <ServiceBackend services={services}/>
                 </>
@@ -149,7 +149,7 @@ setClicked(!clicked)
                 
                 Threading
                 </button>
-                {(showing === "Threading" && clicked) &&
+                {(showing === "Threading") &&
                 <>
             <ServiceBackend services={services}/>
                 </>
@@ -162,7 +162,7 @@ setClicked(!clicked)
                 Hair Care
                 </button>
 
-                {(showing === "Hair Care" && clicked ) &&
+                {(showing === "Hair Care" ) &&
             <ServiceBackend services={services}/>
             }
                 </div>
