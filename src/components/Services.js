@@ -43,7 +43,7 @@ setClicked(!clicked)
                 </button>
 
                  {(showing === "Nail Care" && clicked) &&
-            <ServiceBackend services={services}/>
+            <ServiceBackend services={services}/>  || <div></div>
             }
                 
                 <button  id="paraffin" onClick={(e)=>showDiv(e)}>
@@ -71,7 +71,7 @@ setClicked(!clicked)
                 {(showing === "Massage"&& clicked) &&
                 <>
             <ServiceBackend services={services}/>
-                </>
+                </>  || <div></div>
             }
 
                 <button id="makeup" onClick={(e)=>showDiv(e)} >
@@ -84,7 +84,7 @@ setClicked(!clicked)
                 {(showing === "Makeup" && clicked) &&
                 <>
             <ServiceBackend services={services}/>
-                </>
+                </>  || <div></div>
             }
 
                 <button id="skincare" onClick={(e)=>showDiv(e)}>
@@ -97,7 +97,7 @@ setClicked(!clicked)
                 {(showing === "Skincare" && clicked) &&
                 <>
             <ServiceBackend services={services}/>
-                </>
+                </>  || <div></div>
             }
 
                 <button id="eyelashes" onClick={(e)=>showDiv(e)}>
@@ -111,7 +111,7 @@ setClicked(!clicked)
                 {(showing === "Eyelashes and Brows" && clicked) &&
                 <>
             <ServiceBackend services={services}/>
-                </>
+                </>  || <div></div>
             }
     
      
@@ -126,7 +126,7 @@ setClicked(!clicked)
                 {(showing === "Permanent Makeup" && clicked) &&
                 <>
             <ServiceBackend services={services}/>
-                </>
+                </>  || <div></div>
             }
 
                 <button id="waxing" onClick={(e)=>showDiv(e)}>
@@ -139,7 +139,7 @@ setClicked(!clicked)
                 {(showing === "Waxing" && clicked) &&
                 <>
             <ServiceBackend services={services}/>
-                </>
+                </>  || <div></div>
             }
 
                 <button id="threading" onClick={(e)=>showDiv(e)}>
@@ -152,7 +152,7 @@ setClicked(!clicked)
                 {(showing === "Threading" && clicked) &&
                 <>
             <ServiceBackend services={services}/>
-                </>
+                </>  || <div></div>
             }
 
                 <button id="hair" onClick={(e)=>showDiv(e)}>
@@ -163,7 +163,7 @@ setClicked(!clicked)
                 </button>
 
                 {(showing === "Hair Care" && clicked ) &&
-            <ServiceBackend services={services}/>
+            <ServiceBackend services={services}/>  || <div></div>
             }
                 </div>
             </div>
