@@ -20,7 +20,7 @@ export default function NavBar({active, setActive, goToHome, goToAbout, goToServ
 
 
 const handleResize = () => {
-    //setWindowWidth(window.innerWidth);
+    setWindowWidth(window.innerWidth);
     handleToggle()
 }
 
@@ -44,9 +44,9 @@ useEffect(() => {
         <nav>
 
         <div className='burger-menu' >
-        {!toggle &&  <FontAwesomeIcon icon={faBars} onClick={()=>setToggle(true)}/>}
+        {!toggle &&  <FontAwesomeIcon icon={faBars} onClick={()=>setToggle(!toggle)}/>}
             
-            {toggle && <FontAwesomeIcon icon={faTimes} onClick={()=>setToggle(false)}/>}
+            {toggle && <FontAwesomeIcon icon={faTimes} onClick={()=>setToggle(!toggle)}/>}
             
         </div>
 

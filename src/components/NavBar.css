@@ -68,7 +68,8 @@ nav a:active{
     nav ul {
         position:absolute;
         background: #BACACB;
-        width: 150px;
+        width: 22%;
+        min-width: 180px;
         height: 45vh;
         min-height: 320px;
         display: flex;

@@ -37,10 +37,45 @@
 }
 
 
+
 .services .button-list button:hover{
         transform:scale(1.04);
         box-shadow: 10px 10px 7px 1px rgba(0, 0, 0, .2);
+    
 }
+
+.services .button-image{
+position: relative;
+width: 35%;
+min-width: 300px;
+z-index: 300;
+
+}
+
+
+.services .button-image img{
+  width: 0%;
+  position: absolute;
+  z-index: 100;
+  transition: width .5s ease-in;
+}
+
+
+.services #nail-care:hover > #nail-image img,
+.services #paraffin:hover > #paraffin-image img,
+.services #massage:hover > #massage-image img,
+.services #makeup:hover > #makeup-image img,
+.services #skincare:hover > #skincare-image img,
+.services #eyelashes:hover > #eyelashes-image img,
+.services #permanent-makeup:hover > #permanent-makeup-image img,
+.services #waxing:hover > #waxing-image img,
+.services #threading:hover > #threading-image img,
+.services #hair:hover > #hair-image img
+{
+    width: 50%;
+
+}
+
 
 .service-box{  
     display: flex;
@@ -48,12 +83,28 @@
     justify-content: space-around;
     padding: 0 1em 1em;
     animation: service 1s linear forwards;
+    position: relative;
+   
 }
 
 @keyframes service {
     0%{transform:translateY(-7%);opacity:0;}
     100%{transform:translateY(0%);opacity:1;}
     
+}
+
+.services #nail-care:hover ~ .service-box,
+.services #paraffin:hover ~ .service-box,
+.services #massage:hover ~ .service-box,
+.services #makeup:hover ~ .service-box,
+.services #skincare:hover ~ .service-box,
+.services #eyelashes:hover ~ .service-box,
+.services #permanent-makeup:hover ~ .service-box,
+.services #waxing:hover ~ .service-box,
+.services #threading:hover ~ .service-box,
+.services #hair:hover ~ .service-box
+{
+ z-index: -1;
 }
 
 .service-box-info{
@@ -97,7 +148,9 @@
 
 }
 
-@media (max-width:750px){
-
+@media (max-width:767px){
+    .services .button-image{
+        display: none;
+    }
 
 }

@@ -1,14 +1,21 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useRef} from 'react';
 import {Link} from 'react-router-dom';
 import sanityClient from '../client.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faSpinner} from '@fortawesome/free-solid-svg-icons'
+import {faSpinner} from '@fortawesome/free-solid-svg-icons';
+import Details from './Details'
 
 import './Gallery.css';
 
 
 export default function Gallery({changeToGallery}) {
 const [projects, setProjects] = useState(null);
+const [details, setDetails] = useState(false)
+
+const changeToDetails = useRef(null)
+
+console.log(changeToDetails)
+
 
 useEffect(()=>{
     sanityClient
@@ -38,14 +45,18 @@ useEffect(()=>{
 const showData = () => {
 return projects.map((project, index)=>{
         return (
-            <div key={index}  className="project">
-                <img src={project.mainImage.asset.url} className="project-img"/>
+            <>
+            <div key={index}  className="project" onClick={()=>setDetails(true)}>
+                <img  src={project.mainImage.asset.url} className="project-img"/>
                 <span  className="project-span">
                     <h3 >{project.title}</h3>
-                    <p>Author:{project.authorsName}</p>
-                    <p>{new Date(project.publishedAt).toLocaleDateString()}</p>
+                    {/* <p>Author:{project.authorsName}</p>
+                    <p>{new Date(project.publishedAt).toLocaleDateString()}</p> */}
                 </span>
             </div>
+                {details && <Details changeToDetails={changeToDetails}/>}
+
+            </>
         )
     })
 }
