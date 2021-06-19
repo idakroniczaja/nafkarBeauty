@@ -76,11 +76,11 @@ setClicked(!clicked)
             }
 
                 <button id="makeup" onClick={(e)=>showDiv(e)} >
-                Makeup
                     <div className="button-image" id="makeup-image">
                         <img  src='/images/service/makeup.jpg'/>
                 </div>
                 
+                Makeup
                 </button>
                 {(showing === "Makeup" && clicked) &&
                 <>
@@ -89,11 +89,11 @@ setClicked(!clicked)
             }
 
                 <button id="skincare" onClick={(e)=>showDiv(e)}>
-                Skincare
                 <div className="button-image" id="skincare-image">
                         <img  src='/images/service/skincare.png'/>
                 </div>
                 
+                Skincare
                 </button>
                 {(showing === "Skincare" && clicked) &&
                 <>
@@ -102,11 +102,11 @@ setClicked(!clicked)
             }
 
                 <button id="eyelashes" onClick={(e)=>showDiv(e)}>
-                Eyelashes and Brows
                  <div className="button-image" id="eyelashes-image">
                         <img  src='/images/service/browslashes.jpg'/>
                 </div>
             
+                Eyelashes and Brows
                 </button>
                 {(showing === "Eyelashes and Brows" && clicked) &&
                 <>
@@ -117,11 +117,11 @@ setClicked(!clicked)
      
 
                 <button id="permanent-makeup" onClick={(e)=>showDiv(e)}>
-                Permanent Makeup
                <div className="button-image" id="permanent-makeup-image">
                         <img  src='/images/service/permanentmakeup.jpg'/>
                 </div>
                 
+                Permanent Makeup
                 </button>
                 {(showing === "Permanent Makeup" && clicked) &&
                 <>
@@ -130,11 +130,11 @@ setClicked(!clicked)
             }
 
                 <button id="waxing" onClick={(e)=>showDiv(e)}>
-                Waxing
                 <div className="button-image" id="waxing-image">
                         <img  src='/images/service/waxing.jpg'/>
                 </div>
                 
+                Waxing
                 </button>
                 {(showing === "Waxing" && clicked) &&
                 <>
@@ -143,11 +143,11 @@ setClicked(!clicked)
             }
 
                 <button id="threading" onClick={(e)=>showDiv(e)}>
-                Threading
                 <div className="button-image" id="threading-image">
                         <img  src='/images/service/threading.jpg'/>
                 </div>
                 
+                Threading
                 </button>
                 {(showing === "Threading" && clicked) &&
                 <>
@@ -156,10 +156,10 @@ setClicked(!clicked)
             }
 
                 <button id="hair" onClick={(e)=>showDiv(e)}>
-                Hair Care
                <div className="button-image" id="hair-image">
                         <img  src='/images/service/hair.jpg'/>
                 </div>
+                Hair Care
                 </button>
 
                 {(showing === "Hair Care" && clicked ) &&
