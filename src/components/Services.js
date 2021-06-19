@@ -13,16 +13,14 @@ const services = useRef(null);
 
 
 
-
-
-
-const showDiv = async (e) => {
+    const showDiv = async (e) => {
 setShowing(e.target.innerText);
-console.log(e.target.innerText)
 setClicked(!clicked)
-
-
 }
+
+
+
+
 
 
 
@@ -108,6 +106,7 @@ setClicked(!clicked)
             
                 Eyelashes and Brows
                 </button>
+                
                 {(showing === "Eyelashes and Brows" && clicked) &&
                 <>
             <ServiceBackend services={services}/>
