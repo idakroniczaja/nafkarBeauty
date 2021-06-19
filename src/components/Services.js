@@ -14,6 +14,7 @@ const services = useRef(null);
 
 
     const showDiv = async (e) => {
+        e.preventDefault();
 setShowing(e.target.innerText);
 setClicked(!clicked)
 }

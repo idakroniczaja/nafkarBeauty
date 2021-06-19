@@ -9,7 +9,8 @@ body {
   background-size:cover;
   background-position: center;
   background-attachment: fixed;
-  background-color: #646f70;
+  background-color: #646f70;  
+  /* overflow: hidden; */
 }
 
 .App{
