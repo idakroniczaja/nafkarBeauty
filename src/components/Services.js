@@ -160,8 +160,8 @@ setClicked(!clicked)
                <div className="button-image" id="hair-image">
                         <img  src='/images/service/hair.jpg'/>
                 </div>
-                
                 </button>
+                
                 {(showing === "Hair Care" && clicked ) &&
             <ServiceBackend services={services}/>
             }
