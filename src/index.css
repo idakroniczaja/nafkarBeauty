@@ -10,7 +10,7 @@ body {
   background-position: center;
   background-attachment: fixed;
   background-color: #646f70;  
-  /* overflow: hidden; */
+  overflow: auto;
 }
 
 .App{
