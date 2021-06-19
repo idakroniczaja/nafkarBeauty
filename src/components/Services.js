@@ -36,9 +36,9 @@ setClicked(!clicked)
 
                 <button   id="nail-care" onClick={(e)=>showDiv(e)}>
                 Nail Care
-                {/* <div className="button-image" id='nail-image'>
+                <div className="button-image" id='nail-image'>
                         <img  src='/images/service/nails.jpg'/>
-                     </div> */}
+                     </div>
                 </button>
 
                     
