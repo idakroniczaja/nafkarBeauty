@@ -44,7 +44,7 @@ setClicked(!clicked)
                     
            
 
-                 {(showing === "Nail Care") &&
+                 {(showing.includes("Nail Care") && clicked) &&
             <ServiceBackend services={services}/>
             }
                 

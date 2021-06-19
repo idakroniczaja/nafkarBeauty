@@ -153,9 +153,9 @@ z-index: 300;
        display: none;
        z-index: -10;
     }
-    .service-box{
+    /* .service-box{
         pointer-events:none;
-    }
+    } */
 
    
 }
