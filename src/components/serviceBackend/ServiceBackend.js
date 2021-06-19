@@ -20,6 +20,7 @@ export default function ServiceBackend({services}) {
         }`)
         .then(res=>{
             const results = res.filter(elem=>elem.serviceType.toLowerCase()===services.current.previousElementSibling.innerText.toLowerCase()).sort((a,b)=>a.title.localeCompare(b.title))
+ 
          
             setServiceType(results)   
         })

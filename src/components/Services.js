@@ -10,15 +10,16 @@ const [showing, setShowing] = useState('')
 const [clicked, setClicked] = useState(false);
 
 const services = useRef(null);
-
+{services.current && console.log(services.current.previousSibling.innerText)}
 
 
 
 
 
 const showDiv = async (e) => {
-await setShowing(e.target.innerText);
+setShowing(e.target.innerText);
 setClicked(!clicked)
+// services.current.previousSibling.innerText
 
 }
 
@@ -35,16 +36,14 @@ setClicked(!clicked)
                     
 
                 <button   id="nail-care" onClick={(e)=>showDiv(e)}>
-                Nail Care
+                
                 <div className="button-image" id='nail-image'>
                         <img  src='/images/service/nails.jpg'/>
                      </div>
+                     Nail Care
                 </button>
 
-                    
-           
-
-                 {(showing.includes("Nail Care") && clicked) &&
+                 {(showing === "Nail Care" && clicked) &&
             <ServiceBackend services={services}/>
             }
                 
