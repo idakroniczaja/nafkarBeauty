@@ -63,11 +63,11 @@ setClicked(!clicked)
             
 
                 <button id="massage" onClick={(e)=>showDiv(e)}>
-                Massage
                 <div className="button-image" id='massage-image'>
                             <img  src='/images/service/masage.jpg'/>
                     </div>
                 
+                Massage
                 </button>
                 {(showing === "Massage"&& clicked) &&
                 <>
