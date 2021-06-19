@@ -149,7 +149,7 @@ z-index: 300;
 }
 
 @media (max-width:767px){
-    .services .button-image{
+    .services #nail-image{
         display: none;
     }
 
