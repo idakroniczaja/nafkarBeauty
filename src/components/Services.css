@@ -150,7 +150,16 @@ z-index: 300;
 
 @media (max-width:767px){
     .services #nail-image,
-    .services #paraffin-image{
+    .services #paraffin-image,
+    .services #massage-image,
+    .services #makeup-image,
+    .services #skincare-image,
+    .servives #eyelashes-image,
+    .services #permanent-makeup-image,
+    .services #waxing-image,
+    .services #threading-image,
+    .services #hair-image
+    {
        display: none;
        z-index: -10;
     }
