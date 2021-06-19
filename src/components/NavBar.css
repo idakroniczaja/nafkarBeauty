@@ -32,6 +32,7 @@ nav a {
 nav a:hover{
     color:skyblue;
     list-style:'− ' inside;
+    letter-spacing: 0.8rem;
 }
 
 nav a:focus{
