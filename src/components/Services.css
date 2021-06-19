@@ -150,7 +150,11 @@ z-index: 300;
 
 @media (max-width:767px){
     .services #nail-image{
-       visibility: hidden;
+       display: none;
+       z-index: -10;
+    }
+    .service-box{
+        pointer-events:none;
     }
 
    
