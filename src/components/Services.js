@@ -10,7 +10,7 @@ const [showing, setShowing] = useState('')
 const [clicked, setClicked] = useState(false);
 
 const services = useRef(null);
-{services.current && console.log(services.current.previousSibling.innerText)}
+
 
 
 
@@ -18,8 +18,9 @@ const services = useRef(null);
 
 const showDiv = async (e) => {
 setShowing(e.target.innerText);
+console.log(e.target.innerText)
 setClicked(!clicked)
-// services.current.previousSibling.innerText
+
 
 }
 
@@ -48,12 +49,12 @@ setClicked(!clicked)
             }
                 
                 <button  id="paraffin" onClick={(e)=>showDiv(e)}>
-                Paraffin
-                {/* <div className="button-image" id='paraffin-image'>
+                <div className="button-image" id='paraffin-image'>
                         <img  src='/images/service/paraffin.jpg'/>
-                </div> */}
+                </div>
+                Paraffin
                 </button>
-                {(showing === "Paraffin"&& clicked) &&
+                {(showing === "Paraffin" && clicked) &&
                 <>
             <ServiceBackend services={services}/>
                 </>

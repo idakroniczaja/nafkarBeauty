@@ -149,13 +149,23 @@ z-index: 300;
 }
 
 @media (max-width:767px){
-    .services #nail-image{
+    .services #nail-image,
+    .services #paraffin-image{
        display: none;
        z-index: -10;
     }
-    /* .service-box{
-        pointer-events:none;
-    } */
-
+    .services #nail-care:hover ~ .service-box,
+    .services #paraffin:hover ~ .service-box,
+    .services #massage:hover ~ .service-box,
+    .services #makeup:hover ~ .service-box,
+    .services #skincare:hover ~ .service-box,
+    .services #eyelashes:hover ~ .service-box,
+    .services #permanent-makeup:hover ~ .service-box,
+    .services #waxing:hover ~ .service-box,
+    .services #threading:hover ~ .service-box,
+    .services #hair:hover ~ .service-box
+    {
+     z-index: 0;
+    }
    
 }
