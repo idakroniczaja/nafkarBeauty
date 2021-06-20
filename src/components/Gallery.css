@@ -47,7 +47,7 @@
     width: 95%;
     padding: 0;
     position: relative;
-    transition: transform .3s ease-in-out;
+    transition: all .3s ease-in-out;
  
     
        
@@ -68,7 +68,10 @@
 }
 
 .project-img:hover {
-    transform:scale(1.1);
+    transform:scale(1.2);
+
+    
+  
 }
 
 .project-img:hover ~ .project-span{

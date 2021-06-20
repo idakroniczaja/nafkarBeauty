@@ -10,11 +10,8 @@ import './Gallery.css';
 
 export default function Gallery({changeToGallery}) {
 const [projects, setProjects] = useState(null);
-const [details, setDetails] = useState(false)
+const [details, setDetails] = useState('')
 
-const changeToDetails = useRef(null)
-
-console.log(changeToDetails)
 
 
 useEffect(()=>{
@@ -42,19 +39,26 @@ useEffect(()=>{
 },[])
 
 
+const changeToDetails = (e) =>{
+    if(e.target.innerText){
+        setDetails(e.target.innerText )
+    }else setDetails(e.target.nextSibling.firstChild.firstChild.data)
+    
+    
+}
+
 const showData = () => {
-return projects.map((project, index)=>{
+    return projects.map((project, index)=>{
         return (
-            <>
-            <div key={index}  className="project" onClick={()=>setDetails(true)}>
-                <img  src={project.mainImage.asset.url} className="project-img"/>
+            < >
+            {console.log(project.body)}
+            <div key={index}  className="project"  onClick={(e)=>changeToDetails(e)}>
+                <img  src={project.mainImage.asset.url} className="project-img" />
                 <span  className="project-span">
-                    <h3 >{project.title}</h3>
-                    {/* <p>Author:{project.authorsName}</p>
-                    <p>{new Date(project.publishedAt).toLocaleDateString()}</p> */}
+                    <h3 >{project.title} </h3>
                 </span>
+                {details.includes(project.title) && <Details project={project}/>}
             </div>
-                {details && <Details changeToDetails={changeToDetails}/>}
 
             </>
         )

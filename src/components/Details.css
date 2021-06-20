@@ -1,0 +1,61 @@
+.details{
+    background-color: rgba(212, 231, 232, 85%);
+    position:absolute;
+    height: 97%;
+    width: 90%;
+    z-index: 200;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.details h3{
+    font-size: 1.5rem;
+    color: #646f70;
+    text-align: center;
+    padding:0;
+    margin:0;
+}
+
+.details #name-x{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:0;
+    margin:0;
+
+}
+
+.details #name{
+    color:#646f70;
+    margin-left: -40%;
+    font-style: oblique;
+    font-size: 1.2rem;
+}
+
+.details #x{
+   color: #7e7e7e;
+   display: block;
+
+}
+ 
+.details #date{
+    color:#646f70;
+    font-style: oblique;
+    font-size: 1.2rem;
+}
+
+@media (max-width:700px) {
+    .details{
+        top:11%;
+    }
+
+
+
+}
