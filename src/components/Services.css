@@ -79,14 +79,14 @@ z-index: 300;
 
 
 .service-box{  
+    background-color: transparent;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding: 0 1em 1em;
     animation: service 1s linear forwards;
-    position: relative;
-    overflow: hidden;
-   
+    position: sticky;
+    top:100px
 }
 
 @keyframes service {
@@ -184,4 +184,9 @@ z-index: 300;
 
     }
    
+}
+
+.test{
+    overflow-y: hidden;
+
 }
