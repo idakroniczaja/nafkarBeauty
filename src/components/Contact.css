@@ -129,7 +129,10 @@ width: 100%;
 }
 
 
-@media (max-width:500px){
+@media (max-width:600px){
+  .contact{
+    padding: 10em 0 0 10em;
+  }
   .contact .direction h2{
     font-size: 1.5rem;
     margin-right: 1em;

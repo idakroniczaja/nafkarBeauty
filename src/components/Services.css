@@ -181,12 +181,9 @@ z-index: 300;
     }
 
     @media (max-width:450px){
-
+        .service-box-info{
+            width: 30%;
+        }
     }
    
-}
-
-.test{
-    overflow-y: hidden;
-
 }

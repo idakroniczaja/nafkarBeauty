@@ -56,6 +56,13 @@
         top:11%;
     }
 
-
-
+    .details #x{
+        font-size: 20px;
+    }
+    .details #name{
+        color:#646f70;
+        margin-left: -30%;
+        font-style: oblique;
+        font-size: 1.2rem;
+    }
 }
