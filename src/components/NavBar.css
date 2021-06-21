@@ -79,17 +79,17 @@ nav a:active{
         top:-17px;
         right: 10px;
         z-index: -1;
-        animation-name: navbar;
+        /* animation-name: navbar;
         animation-duration: 500ms;
-        animation-timing-function: ease-in;
+        animation-timing-function: ease-in; */
     
        
     }
 
-    @keyframes navbar {
+    /* @keyframes navbar {
         0% {opacity: 0;}
         100% {opacity: 1;}
-    }
+    } */
   
 
     nav a{
@@ -126,9 +126,16 @@ nav a:active{
 
 
 @media (max-width:767px){
+
+    .item{
+        width:100px;
+        height: 200px;
+        background-color: blueviolet;
+    }
     nav a:hover{
         color: rgb(87, 184, 223);
         letter-spacing: 0.6rem;
     }
+
 
     }

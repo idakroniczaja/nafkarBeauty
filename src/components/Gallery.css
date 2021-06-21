@@ -113,8 +113,8 @@
         transition: none;
         transform: none;
         pointer-events: none;
-        transform: translateY(10%)
-     
+        transform: translateY(10%);
+        border-radius: 5px;
     }
 
   
