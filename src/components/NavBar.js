@@ -18,9 +18,9 @@ export default function NavBar({active, setActive, goToHome, goToAbout, goToServ
 
     const transition = useTransition(toggle,(p)=>p,{
         from: {opacity: 0,  transform: 'translateY(-30px)'  },
-        enter: {opacity: 1, transform: 'translateY(0px)' },
+        enter: {opacity: 1, transform: 'translateY(0px)',},
         leave: { opacity: 0, transform: 'translateY(-60px)' },
-        delay:1000,
+     
     });
 
 
@@ -59,16 +59,6 @@ useEffect(() => {
         }
            
         </div>
-
-   
-       {/* {toggle ? <ul >
-                    <li onClick={goToHome}><Link>Home</Link></li>
-                    <li onClick={goToAbout}><Link>About</Link></li>
-                    <li onClick={goToServices}><Link>Services</Link></li>
-                    <li onClick={goToGallery}><Link >Gallery</Link></li>
-                    <li onClick={goToContact}><Link>Contact</Link></li>
-                </ul>
-                : ''} */}
 
         
          {transition.map(({ item, props, key })=>{
